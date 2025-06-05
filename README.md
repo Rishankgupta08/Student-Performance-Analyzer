@@ -1,68 +1,55 @@
-Student Performance Analyzer
-📌 Project Overview
-This project aims to analyze students' academic performance using data analytics techniques. The goal is to uncover insights, trends, and factors that influence performance, and optionally build a predictive model to estimate future outcomes.
+# 🎓 Student Performance Analyzer
 
-🎯 Objectives
-Identify key factors that affect student academic outcomes.
+This project applies data analytics and visualization techniques to explore and understand key factors affecting student academic performance.
 
-Perform exploratory data analysis (EDA) to find hidden patterns.
+## 📁 Project Structure
+├── main.py # Runs full preprocessing and saves cleaned data
+├── data_loading.py # Handles data import
+├── preprocessing.py # Cleans, transforms, and encodes data
+├── visualisations.py # Contains reusable plotting functions
+├── final_visualizations.ipynb # 📊 Main notebook for visual storytelling
+├── student_performance_data.csv # 📂 Dataset used
+└── README.md # 📘 You're here!
 
-Clean and preprocess the dataset for modeling.
+## 📊 Key Visualizations
+-------------------------------------------------------------
+|          Insight                    |    Chart Type       |
+|-------------------------------------|---------------------|
+| Performance Level Distribution      | Bar Plot            |
+| GPA, Attendance, Study Hours Spread | Boxplot             |
+| Study Hours vs GPA                  | Interactive Scatter |
+| GPA by Gender                       | KDE Histogram       |
+| Feature Relationships               | Correlation Heatmap |
+-------------------------------------------------------------
+## 📈 Tools Used
 
-Build and evaluate a simple machine learning model (if applicable).
+- Python
+- Pandas
+- Seaborn
+- Matplotlib
+- Plotly
+- Jupyter Notebook
+- VS Code
 
-🛠️ Technologies Used
-Python
+## 📘 How to Run
 
-Pandas, NumPy
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Rishankgupta08/Student-Performance-Analyzer.git
+Install required libraries:
 
-Matplotlib, Seaborn
+pip install pandas matplotlib seaborn plotly
+Open final_visualizations.ipynb in Jupyter or VS Code.
 
-Scikit-learn (optional, for modeling)
+Run all cells to explore visual insights.
 
-Jupyter Notebook
+📌 Dataset Info
+The dataset includes attributes like Gender, Age, StudyHoursPerWeek, AttendanceRate, GPA, Major, PartTimeJob, and ExtraCurricularActivities.
 
-📂 Folder Structure
-bash
-Copy code
-Student-Performance-Analyzer/
-│
-├── data/             
-├── notebooks/           
-├── results/             
-├── src/                
-└── README.md            
-🧹 Data Preprocessing
-Handled missing values and duplicates.
+GPA-based performance levels were derived and used for visualization and analysis.
 
-Normalized/encoded categorical values if needed.
+✅ Outcome
+This project helps identify trends, outliers, and correlations that can guide educational strategies and interventions to improve student performance.
 
-Ensured all data types were suitable for analysis.
-
-📊 Exploratory Data Analysis (EDA)
-Analyzed distributions of marks, attendance, and other features.
-
-Explored relationships between gender, study time, health, and performance.
-
-Used visualizations like bar plots, box plots, and heatmaps.
-
-
-
-✅ Results
-Found that [insert insight like: "study time and parental education had strong correlation with performance"].
-
-The predictive model achieved an accuracy of XX%.
-
-🚀 How to Run
-Clone the repository 
-git clone https://github.com/RishankGupta08/Student-Performance-Analyzer
-
-Open the notebook in Jupyter Lab or Google Colab.
-
-Run all cells to see the analysis and results.
-
-🙏 Acknowledgments
-[Kaggle/UCI] for providing the dataset.
-
-Open-source community for tools and libraries.
-
+🙌 Credits
+Dataset: Kaggle – Student Habits & Academic Performance Dataset.
